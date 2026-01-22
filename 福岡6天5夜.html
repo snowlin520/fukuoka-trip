@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福岡 6 天 5 夜女子旅 - 全能導覽版</title>
+    <style>
+        :root {
+            --primary: #d48792;
+            --secondary: #fdf2f4;
+            --accent: #b05d6e;
+            --text: #444;
+            --transport: #4a7c59;
+            --transport-bg: #f0f7f4;
+            --shop-bg: #fff9f0;
+            --shop-text: #d35400;
+            --alert: #e74c3c;
+        }
+        body { font-family: -apple-system, "Microsoft JhengHei", sans-serif; background-color: #f8f9fa; margin: 0; padding: 10px; line-height: 1.5; color: var(--text); }
+        .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden; }
+        header { background: var(--primary); color: white; padding: 25px 20px; text-align: center; }
+        h1 { margin: 0; font-size: 1.3rem; letter-spacing: 1px; }
+        .subtitle { font-size: 0.8rem; opacity: 0.9; margin-top: 5px; }
+        
+        .nav-tabs { display: flex; background: #fff; list-style: none; padding: 0; margin: 0; border-bottom: 1px solid #eee; overflow-x: auto; position: sticky; top: 0; z-index: 100; }
+        .nav-tabs li { flex: 1; min-width: 65px; }
+        .nav-tabs button { width: 100%; padding: 15px 0; border: none; background: none; font-size: 0.85rem; color: #999; cursor: pointer; transition: 0.3s; }
+        .nav-tabs button.active { color: var(--accent); font-weight: bold; border-bottom: 4px solid var(--accent); }
+        
+        .tab-content { padding: 20px; display: none; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .item { display: flex; margin-bottom: 25px; position: relative; }
+        .time-box { width: 60px; font-size: 0.85rem; font-weight: bold; color: var(--accent); }
+        .info { flex: 1; border-left: 2px solid var(--secondary); padding-left: 15px; }
+        
+        .place-link { display: inline-block; color: #2c3e50; font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--primary); margin-bottom: 5px; font-size: 1.05rem; }
+        
+        .shop-list { background: var(--shop-bg); padding: 8px 12px; border-radius: 10px; margin-top: 5px; border: 1px dashed #e67e22; }
+        .shop-title { color: var(--shop-text); font-weight: bold; font-size: 0.8rem; display: block; margin-bottom: 4px; }
+        .shop-item { display: inline-block; background: white; color: #555; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin: 2px 2px 2px 0; border: 1px solid #ffe5d0; text-decoration: none; }
+        
+        .transport-card { background: var(--transport-bg); padding: 10px; border-radius: 10px; font-size: 0.8rem; color: var(--transport); margin-top: 8px; border-left: 4px solid var(--transport); }
+        .transport-title { font-weight: bold; margin-bottom: 2px; display: block; }
+        
+        .highlight-box { background: #fff4e6; border-left: 4px solid #ff922b; padding: 8px; margin-top: 8px; font-size: 0.8rem; border-radius: 4px; }
+        .alert-box { background: #fff5f5; border: 1px solid #feb2b2; color: var(--alert); padding: 8px; border-radius: 8px; margin-top: 8px; font-size: 0.8rem; font-weight: bold; }
+        .desc { font-size: 0.8rem; color: #666; margin-top: 4px; }
+        footer { text-align: center; padding: 20px; font-size: 0.7rem; color: #bbb; border-top: 1px solid #f1f1f1; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>福岡4女子旅 六天五夜完整導覽 🌸</h1>
+        <div class="subtitle">2026/2/24(二) - 3/1(日) </div>
+    </header>
+
+    <ul class="nav-tabs">
+        <li><button class="tab-link active" onclick="openTab(event, 'day1')">D1<br>2/24</button></li>
+        <li><button class="tab-link" onclick="openTab(event, 'day2')">D2<br>2/25</button></li>
+        <li><button class="tab-link" onclick="openTab(event, 'day3')">D3<br>2/26</button></li>
+        <li><button class="tab-link" onclick="openTab(event, 'day4')">D4<br>2/27</button></li>
+        <li><button class="tab-link" onclick="openTab(event, 'day5')">D5<br>2/28</button></li>
+        <li><button class="tab-link" onclick="openTab(event, 'day6')">D6<br>3/1</button></li>
+    </ul>
+
+    <!-- Day 1 -->
+    <div id="day1" class="tab-content" style="display:block;">
+        <div class="item">
+            <div class="time-box">14:55</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=福岡空港" target="_blank" class="place-link">抵達福岡機場</a>
+                <div class="transport-card">🚕 <b>交通：</b>機場 ⮕ 飯店：計程車。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">16:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=Hakataku+Tsumashouzi+10-17" target="_blank" class="place-link">飯店 Check-in</a>
+                <div class="desc">博多區妻匠寺 10-17。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">16:30</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=櫛田神社" target="_blank" class="place-link">櫛田神社散策</a>
+                <div class="transport-card">🚶 <b>交通：</b>飯店出發步行約 20 分鐘。</div>
+                <div class="shop-list">
+                    <span class="shop-title">🥐 周邊必吃：</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=FUK+COFFEE" target="_blank" class="shop-item">FUK COFFEE</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=フルフル博多" target="_blank" class="shop-item">明太子麵包 (Full Full)</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">17:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=川端通商店街" target="_blank" class="place-link">川端通商店街</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">19:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=七輪焼肉遊來+中洲店" target="_blank" class="place-link">晚餐：七輪燒肉 游來 (中洲店)</a>
+                <div class="desc">福岡市博多區中洲 5 丁目 3-21。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div id="day2" class="tab-content">
+        <div class="item">
+            <div class="time-box">08:00</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">飯店 ⮕ 太宰府</span>
+                <div class="transport-card">
+                    <span class="transport-title">🚃 交通步驟：</span>
+                    1. 步行至「中洲川端站」搭地鐵 ⮕「天神」。<br>
+                    2. 轉西鐵電車（大牟田線）⮕「西鐵二日市站」⮕ 轉太宰府線至「太宰府站」。
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">09:30</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=太宰府天満宮" target="_blank" class="place-link">太宰府天滿宮 & 參道散策</a>
+                <div class="shop-list">
+                    <span class="shop-title">🥐 早餐與推薦店家：</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=YAMAYA+BASE+DAZAIFU" target="_blank" class="shop-item">YAMAYA 明太子麵包</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Miffy+Kitchen+Dazaifu" target="_blank" class="shop-item">Miffy 廚房</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Coba+coffee+Dazaifu" target="_blank" class="shop-item">Coba coffee</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">12:30</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">午餐選擇</span>
+                <div class="shop-list">
+                    <a href="https://www.google.com/maps/search/?api=1&query=一蘭拉麵+太宰府參道店" target="_blank" class="shop-item">一蘭 (五角碗)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=暖暮+太宰府站前店" target="_blank" class="shop-item">暖暮拉麵</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=鰻の成瀬+太宰府天満宮前店" target="_blank" class="shop-item">鰻之成瀨</a>
+                </div>
+                <div class="highlight-box">📅 13:30 集合準備回程。</div>
+	        <div class="transport-card">
+                    <span class="transport-title">🚃 交通步驟：</span>
+	            方案1:<br>
+                    1. 步行至「太宰府站」搭地鐵 ⮕「西鐵二日市站」。<br>
+                    2. 轉西鐵電車（大牟田線）⮕「西鐵福岡 (天神) 站」。
+	            方案2:<br>
+                    1. 步行至「太宰府站」出口正前方搭｢旅人號巴士」 ⮕「西鐵天神高速巴士總站」。<br>
+                    2.  <a href="https://www.google.com/maps/search/?api=1&query=西鐵天神高速巴士總站" target="_blank" class="shop-item">西鐵天神高速巴士總站</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">下午</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">天神商圈 & 博多站購物</span>
+                <div class="shop-list">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Mina+Tenjin" target="_blank" class="shop-item">Mina 天神 (Uniqlo 限定)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=天神地下街" target="_blank" class="shop-item">天神地下街 (3coins+)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Yodobashi+Hakata" target="_blank" class="shop-item">博多友都八喜 / 巴士總站</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">19:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=ひょうたんの回転寿司+天神" target="_blank" class="place-link">晚餐：葫蘆壽司</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div id="day3" class="tab-content">
+        <div class="item">
+            <div class="time-box">09:17</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">由布院之森 1 號</span>
+                <div class="transport-card">🚆 <b>去程：</b>博多站發車 (09:17) ⮕ 由布院抵達 (11:31)。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">11:45</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=由布まぶし+心+駅前支店" target="_blank" class="place-link">午餐：由布釜飯 心 (站前店)</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">13:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=湯の坪街道" target="_blank" class="place-link">湯之坪街道吃喝散策</a>
+                <div class="shop-list">
+                    <span class="shop-title">🍦 必吃甜點與景點：</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Milch+由布院" target="_blank" class="shop-item">Milch 布丁</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=由布院金賞コロッケ" target="_blank" class="shop-item">金賞可樂餅</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Yufuin+Floral+Village" target="_blank" class="shop-item">童話村</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=金鱗湖" target="_blank" class="shop-item">金鱗湖</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">17:17</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">由布院之森 6 號</span>
+                <div class="transport-card">🚆 <b>回程：</b>由布院發車 (17:17) ⮕ 博多抵達 (19:28)。</div>
+                <div class="highlight-box">🚆 請務必於 17:00 前回到車站準備搭車。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">20:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=博多牛もつ鍋+前田屋+今泉店" target="_blank" class="place-link">晚餐：博多牛雜鍋前田屋－今泉店</a>
+                <div class="highlight-box">🚉 回到博多後前往今泉店用餐（建議搭計程車或地鐵以利準時到達）。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div id="day4" class="tab-content">
+ 　　　<div class="item">
+            <div class="time-box">09:00</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">吃早餐</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">10:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=福岡麵包超人兒童博物館in博多" target="_blank" class="place-link">麵包超人兒童博物館</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">12:30</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">午餐推薦</span>
+                <div class="shop-list">
+                    <a href="https://www.google.com/maps/search/?api=1&query=仁伊島総本店" target="_blank" class="shop-item">仁伊島總本店</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=博多親子丼+うま中" target="_blank" class="shop-item">うま中</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">14:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=宮地嶽神社" target="_blank" class="place-link">宮地嶽神社 (光之道)</a>
+                <div class="transport-card">
+                    <span class="transport-title">🚌 交通詳情：</span>
+                    1. <b>中洲川端⮕ 「博多站」。<br>
+                    2. <b>JR：</b>博多站轉乘 JR 鹿兒島本線 ⮕ 「福間站」。<br>
+                    3. <b>巴士：</b>福間站前搭 <b>5 號巴士</b> ⮕ 「宮地嶽神社前站」。
+                </div>
+                <div class="highlight-box">📅 14:00 領取特別席整理券。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">20:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=串焼+六三四" target="_blank" class="place-link">晚餐：串燒 六三四</a>
+                <div class="shop-list">
+                    <span class="shop-title">🍜 晚餐備案 (怕排不到隊)：</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=博多らーめん+Shin-Shin+天神本店" target="_blank" class="shop-item">博多拉麵 ShinShin 天神本店</a>
+                </div>
+                <div class="desc">ShinShin 天神本店營業至深夜，若六三四候位過久可考慮改吃拉麵。</div> 
+                <div class="transport-card">
+                    <span class="transport-title">🚌 交通詳情：</span>
+                    1. <b>宮地嶽神社前站搭乘巴士⮕ 「JR福間站」。<br>
+                    2. <b>JR：</b>福間站轉乘 JR 鹿兒島本線 ⮕ 「JR博多站」。<br>
+                    3. <b>轉乘：</b>地鐵七隈線 <b>往橋本方向</b> ⮕ 「天神南站」。<br>
+	            4.<b>最後步行：從天神南站步行約 5-8 分鐘即可抵達。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div id="day5" class="tab-content">   
+        <div class="item">
+            <div class="time-box">08:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=炉端ノいとおかし" target="_blank" class="place-link">早餐：炉端ノいとおかし</a>
+                <div class="transport-card">
+                    <span class="transport-title">🚇 交通步驟：</span>
+                    1. 從飯店步行至 <b>「櫛田神社前站」</b>。<br>
+                    2. 搭乘地鐵 <b>七隈線</b> (往橋本方向) ⮕ 約11分鐘抵達 <b>「六本松站」</b>。<br>
+                    3.出口步行約3分鐘抵達。
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">10:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=福岡市動植物園" target="_blank" class="place-link">福岡市動植物園</a>
+                <div class="transport-card">
+                    <span class="transport-title">🚌 巴士轉乘：</span>
+                    1. <b>乘車處：</b>「六本松（福銀前）」巴士站。<br>
+                    2. <b>班次：</b>搭乘西鐵巴士 <b>56 號</b> 或 <b>58 號</b>。<br>
+                    3. <b>下車站：</b>於 <b>「動物園前」</b> 站下車。
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">12:30</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=水炊き+橙" target="_blank" class="place-link">午餐：水炊鍋 橙</a>
+                <div class="transport-card">
+                    <span class="transport-title">🚶 交通銜接：</span>
+                    1. 從動植物園搭巴士回到「六本松站」。<br>
+                    2. 步行約 10 分鐘，或轉地鐵/巴士前往 <b>「大濠公園/赤坂」</b> 區域。
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">15:00</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=大濠公園+スターバックス" target="_blank" class="place-link">大濠公園 & 星巴克</a>
+                <div class="desc">享受湖畔悠閒時光。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">17:30</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=黒毛和牛+博多牛まぶし+武蔵" target="_blank" class="place-link">晚餐：博多牛まぶし 武藏</a>
+                <div class="transport-card">
+                    <span class="transport-title">🚇 交通回博多：</span>
+                    1. 步行至 <b>地鐵「大濠公園站」</b>。<br>
+                    2. 搭乘 <b>空港線</b> ⮕ 直達 <b>「博多站」</b>。<br>
+                    3. 餐廳位於博多站筑紫口側 (Sunlife Hotel 1F)。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div id="day6" class="tab-content">
+        <div class="item">
+            <div class="time-box">07:00</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">辦理退房 & 出門</span>
+                <div class="transport-card">
+                    <span class="transport-title">🚇 飯店 ⮕ 博多站：</span>
+                    1. 從飯店步行至 <b>「中洲川端站」</b>。<br>
+                    2. 搭乘地鐵 <b>空港線</b> (往福岡空港方向) ⮕ 於 <b>「博多站」</b> 下車。<br>
+                    <i>(或是行李較多可請櫃檯叫計程車，車程約 10-15 分鐘)</i>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">07:30</div>
+            <div class="info">
+                <a href="https://www.google.com/maps/search/?api=1&query=博多一番街" target="_blank" class="place-link">博多站早餐 (最後朝聖)</a>
+                <div class="shop-list">
+                    <span class="shop-title">🥞 早餐推薦：</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=喜水丸+博多一番街" target="_blank" class="shop-item">喜水丸 (明太子吃到飽)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=たんやHAKATA" target="_blank" class="shop-item">牛舌定食 たんや</a>
+                </div>
+                <div class="desc">吃完可以趁最後時間在博多車站購入伴手禮。</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="time-box">09:15</div>
+            <div class="info">
+                <span class="place-link" style="border:none;">前往福岡機場</span>
+                <div class="transport-card">
+                    <span class="transport-title">🚇 交通至機場：</span>
+                    1. 於「博多站」搭乘地鐵 <b>空港線</b> (往福岡空港方向) ⮕ 抵達終點站 <b>「福岡空港站」</b> (僅需 5 分鐘)。<br>
+                    2. 下車後搭乘電梯至 <b>國際線接駁巴士乘車處</b>，轉乘免費接駁車前往國際航廈。<br>
+                    <i>(推薦：若多人分擔，從博多站搭 <b>計程車</b> 直達國際航廈約 1500~2000 日圓，最省時省力)</i>
+                </div>
+                <div class="alert-box">✈️ 長榮 BR105 | 12:15 起飛<br>請務必於 09:30 前抵達櫃檯辦理報到。</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>行程更新於 2025/1/22 | 修正 Day 6 出門時間與交通詳情 📍</p>
+    </footer>
+</div>
+
+<script>
+    function openTab(evt, dayName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) tablinks[i].className = tablinks[i].className.replace(" active", "");
+        document.getElementById(dayName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
